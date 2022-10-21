@@ -1,17 +1,25 @@
 plugins {
     id 'com.android.application'
     id 'org.jetbrains.kotlin.android'
+    id 'maven-publish'
+}
+publishing {
+    publications {
+        mavenJava(MavenPublication) {
+            groupId = "com.example.TestLib"
+            artifactId = "myLib"
+            version = "1.1"
+
+//            from components.java
+        }
+    }
 }
 
 android {
     namespace 'com.example.testlib'
     compileSdk 32
 
-    publishing {
-        singleVariant("release") {
-            withSourcesJar()
-        }
-    }
+
 
     defaultConfig {
         applicationId "com.example.testlib"
