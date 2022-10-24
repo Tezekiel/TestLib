@@ -52,7 +52,7 @@ afterEvaluate {
                 // You can then customize attributes of the publication as shown below.
                 groupId = "com.example"
                 artifactId = "mytestlibrary"
-                version = "1.10"
+                version = "1.12"
 
             }
         }
