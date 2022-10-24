@@ -50,7 +50,7 @@ afterEvaluate {
                 from components.release
 
                 // You can then customize attributes of the publication as shown below.
-                groupId = "com.example.testlib"
+                groupId = "com.example"
                 artifactId = "mytestlibrary"
                 version = "1.10"
 
